@@ -29,6 +29,8 @@ syntax enable
 filetype plugin on
 filetype indent on
 
+set title
+
 set timeoutlen=50
 
 set autoread
