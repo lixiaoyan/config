@@ -15,7 +15,7 @@ Plugin 'groenewege/vim-less'
 
 Plugin 'mattn/emmet-vim'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'marijnh/tern_for_vim'
 
@@ -72,14 +72,19 @@ set smartcase
 set hlsearch
 set incsearch
 
+set hidden
+
 set nobackup
 set nowritebackup
 set noswapfile
+
+set clipboard=unnamedplus
 
 set background=light
 colorscheme solarized
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 autocmd FileType html,php,css,less imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 let g:user_emmet_settings = {
